@@ -116,6 +116,7 @@ const checkForNull = (firstProperty, secondProperty) => {
     }
     return secondProperty
   }
+  if (Array.isArray(firstProperty) && (!firstProperty[0] || firstProperty[0] === '-')) return []
   return firstProperty
 }
 
@@ -130,6 +131,27 @@ const run = async () => {
     // Splice will remove an item from an array and return the removed item
     const heroIndex = heroesConverted.findIndex((hero) => hero.name === supe.name)
     if (heroIndex !== -1) csvHero = heroesConverted.splice(heroIndex, 1)[0]
+    const superHero = {}
+    superHero.name = supe.name
+    superHero.powerStats = supe.powerstats
+    superHero.powers = powers[supe.name.toLowerCase()]
+    superHero.appearance = {}
+    superHero.biography = {}
+    superHero.appearance.gender = checkForNull(supe.appearance.gender, csvHero.Gender)
+    superHero.appearance.race = checkForNull(supe.appearance.race, csvHero.Race)
+    superHero.appearance.heightIn = checkForNull(supe.appearance.height[0], csvHero.height)
+    superHero.appearance.weightLb = checkForNull(supe.appearance.weight[0], csvHero.weight)
+    superHero.appearance.eyeColor = checkForNull(supe.appearance.eyeColor, csvHero['Eye color'])
+    superHero.appearance.hairColor = checkForNull(supe.appearance.hairColor, csvHero['Hair color'])
+    superHero.biography.fullName = checkForNull(supe.biography.fullName, null)
+    superHero.biography.aliases = checkForNull(supe.biography.aliases, null)
+    superHero.biography.placeOfBirth = checkForNull(supe.biography.placeOfBirth, null)
+    superHero.biography.publisher = checkForNull(supe.biography.publisher, csvHero.Publisher)
+    superHero.biography.alignment = checkForNull(supe.biography.alignment, csvHero.Alignment)
+    superHero.images = supe.images
+    return superHero
+  })
+  fs.writeFileSync(__dirname + '/normalized/heroes.json', JSON.stringify(superHeroes), 'utf-8')
 }
 
 run()
