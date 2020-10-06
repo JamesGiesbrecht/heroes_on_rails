@@ -835,7 +835,7 @@
       ],
       "placeOfBirth": "Centerport, Long Island, New York",
       "firstAppearance": "X-Men #54-56 (1969)",
-      "publisher": "Archangel",
+      "publisher": "Marvel Comics",
       "alignment": "good"
     },
     "work": {
@@ -923,7 +923,7 @@
       "aliases": ["Tempest"],
       "placeOfBirth": "-",
       "firstAppearance": "New X-Men #118 (November, 2001)",
-      "publisher": "Tempest",
+      "publisher": "Marvel Comics",
       "alignment": "good"
     },
     "work": {
@@ -1063,7 +1063,7 @@
       ],
       "placeOfBirth": "Elmsford, New York",
       "firstAppearance": "Tales to Astonish #27 (January, 1962) (as Hank Pym)  Tales to Astonish #35 (September, 1962) (as Ant-Man)",
-      "publisher": "Giant-Man",
+      "publisher": "Marvel Comics",
       "alignment": "good"
     },
     "work": {
@@ -1202,7 +1202,7 @@
       ],
       "placeOfBirth": "San Francisco, California",
       "firstAppearance": "Amazing Spider-Man #569 (as Anti-Venom)",
-      "publisher": "Toxin",
+      "publisher": "Marvel Comics",
       "alignment": "-"
     },
     "work": {
@@ -1480,7 +1480,7 @@
       "aliases": ["War", "Dark Angel", "Death", "Avenging Angel"],
       "placeOfBirth": "Centerport, Long Island, New York",
       "firstAppearance": "X-Men #1 (September, 1963)",
-      "publisher": "Angel",
+      "publisher": "Marvel Comics",
       "alignment": "good"
     },
     "work": {
@@ -1751,7 +1751,7 @@
       ],
       "placeOfBirth": "Milwaukee, Wisconsin",
       "firstAppearance": "Incredible Hulk #449",
-      "publisher": "Goliath",
+      "publisher": "Marvel Comics",
       "alignment": "good"
     },
     "work": {
@@ -2204,7 +2204,7 @@
       "aliases": ["Oracle", "Bluebelle"],
       "placeOfBirth": "-",
       "firstAppearance": "Detective Comics #359",
-      "publisher": "Oracle",
+      "publisher": "DC Comics",
       "alignment": "good"
     },
     "work": {
@@ -2292,7 +2292,7 @@
       "aliases": ["Steph", "Robin", "Marion Todd", "Spoiler"],
       "placeOfBirth": "-",
       "firstAppearance": "Detective Comics #647. As Batgirl in Batgirl (Volume 3) #1. (2009)",
-      "publisher": "Spoiler",
+      "publisher": "Marvel Comics",
       "alignment": "good"
     },
     "work": {
@@ -2430,7 +2430,7 @@
       "aliases": ["Dick Grayson"],
       "placeOfBirth": "-",
       "firstAppearance": "-",
-      "publisher": "Nightwing",
+      "publisher": "DC Comics",
       "alignment": "good"
     },
     "work": {
@@ -4263,7 +4263,7 @@
       ],
       "placeOfBirth": "-",
       "firstAppearance": "Secret Wars II #5",
-      "publisher": "Meltdown",
+      "publisher": "Marvel Comics",
       "alignment": "good"
     },
     "work": {
@@ -4307,7 +4307,7 @@
       "aliases": ["Gemini", "Jack-In-The-Box"],
       "placeOfBirth": "Place of birth unknown",
       "firstAppearance": "Alpha Flight #16",
-      "publisher": "Gemini V",
+      "publisher": "Marvel Comics",
       "alignment": "good"
     },
     "work": {
@@ -5149,7 +5149,7 @@
       ],
       "placeOfBirth": "Boston, Massachusetts",
       "firstAppearance": "Ms. Marvel #1",
-      "publisher": "Binary",
+      "publisher": "Marvel Comics",
       "alignment": "good"
     },
     "work": {
@@ -6820,7 +6820,7 @@
       ],
       "placeOfBirth": "Canada",
       "firstAppearance": "New Mutants #98 (February, 1991)",
-      "publisher": "Evil Deadpool",
+      "publisher": "Marvel Comics",
       "alignment": "neutral"
     },
     "work": {
@@ -8181,7 +8181,7 @@
       "aliases": ["Dreadpool"],
       "placeOfBirth": "-",
       "firstAppearance": "Deadpool Vol 2 #44 (December, 2011)",
-      "publisher": "Deadpool",
+      "publisher": "Marvel Comics",
       "alignment": "bad"
     },
     "work": {
@@ -8801,7 +8801,7 @@
     },
     "biography": {
       "fullName": "Barry Allen",
-      "alterEgos": "Black Racer",
+      "alterEgos": "DC Comics",
       "aliases": [
         "The Scarlet Speedster",
         "the Fastest Man Alive",
@@ -8858,7 +8858,7 @@
       ],
       "placeOfBirth": "Blue Valley, Nebraska",
       "firstAppearance": "Flash #110 (January, 1960)",
-      "publisher": "Speed Demon",
+      "publisher": "DC Comics",
       "alignment": "good"
     },
     "work": {
@@ -8902,7 +8902,7 @@
       "aliases": ["Impulse", "Kid Flash II"],
       "placeOfBirth": "-",
       "firstAppearance": "(as Impulse) Flash v.2 #91 (June 1994)* (as Kid Flash) Teen Titans v.3 #4 (December 2003)",
-      "publisher": "Impulse",
+      "publisher": "Marvel Comics",
       "alignment": "good"
     },
     "work": {
@@ -10378,7 +10378,7 @@
       ],
       "placeOfBirth": "Waverly, Iowa",
       "firstAppearance": "Tales of Suspense #57 (September, 1964)",
-      "publisher": "Goliath",
+      "publisher": "Marvel Comics",
       "alignment": "good"
     },
     "work": {
@@ -10937,7 +10937,7 @@
       "aliases": ["Batgirl", "Sicilian", "Mafia Princess"],
       "placeOfBirth": "-",
       "firstAppearance": "Huntress #1 (April 1989)",
-      "publisher": "Batgirl III",
+      "publisher": "DC Comics",
       "alignment": "good"
     },
     "work": {
@@ -11214,7 +11214,7 @@
       "aliases": ["Flash IV", "Kid Flash II"],
       "placeOfBirth": "-",
       "firstAppearance": "Flash Vol 2 #92 (July, 1994)",
-      "publisher": "Flash IV",
+      "publisher": "Marvel Comics",
       "alignment": "good"
     },
     "work": {
@@ -11887,7 +11887,7 @@
       "aliases": ["Redd Dayspring", "Marvel Girl"],
       "placeOfBirth": "-",
       "firstAppearance": "X-Men #1 (September, 1963)",
-      "publisher": "Phoenix",
+      "publisher": "Marvel Comics",
       "alignment": "good"
     },
     "work": {
@@ -12063,7 +12063,7 @@
       "aliases": ["Knightress", "Madeline", "Jewel", "Power Woman"],
       "placeOfBirth": "Forrest Hills, New York City",
       "firstAppearance": "Amazing Spider-Man #4 (September, 1963)",
-      "publisher": "Power Woman",
+      "publisher": "Marvel Comics",
       "alignment": "good"
     },
     "work": {
@@ -12619,7 +12619,7 @@
       ],
       "placeOfBirth": "Other Earth, 31st century",
       "firstAppearance": "(As Rama-Tut) Fantastic Four #19 (1963); (as Kang) Avengers #8 (1964)",
-      "publisher": "Iron Lad",
+      "publisher": "Marvel Comics",
       "alignment": "bad"
     },
     "work": {
@@ -14185,7 +14185,7 @@
       ],
       "placeOfBirth": "Harlem, New York City",
       "firstAppearance": "Hero for Hire #1 (1972)",
-      "publisher": "Power Man",
+      "publisher": "Marvel Comics",
       "alignment": "good"
     },
     "work": {
@@ -15234,7 +15234,7 @@
       ],
       "placeOfBirth": "Roanoke, Virginia",
       "firstAppearance": "-",
-      "publisher": "Boom-Boom",
+      "publisher": "Marvel Comics",
       "alignment": "good"
     },
     "work": {
@@ -16475,7 +16475,7 @@
       "aliases": ["She-Thing"],
       "placeOfBirth": "Pullman, Washington",
       "firstAppearance": "-",
-      "publisher": "She-Thing",
+      "publisher": "Marvel Comics",
       "alignment": "good"
     },
     "work": {
@@ -17032,7 +17032,7 @@
       ],
       "placeOfBirth": "Gotham City",
       "firstAppearance": "as Dick Grayson and Robin) Detective Comics #38, (as Nightwing) Tales of the Teen Titans #44, (as Batman) Batman #512",
-      "publisher": "Batman II",
+      "publisher": "DC Comics",
       "alignment": "good"
     },
     "work": {
@@ -17544,7 +17544,7 @@
       ],
       "placeOfBirth": "-",
       "firstAppearance": "Suicide Squad #23 (Jan.1989)",
-      "publisher": "Batgirl",
+      "publisher": "DC Comics",
       "alignment": "good"
     },
     "work": {
@@ -17852,7 +17852,7 @@
       "aliases": ["Redd Dayspring", "Marvel Girl"],
       "placeOfBirth": "-",
       "firstAppearance": "X-Men #1 (September, 1963)",
-      "publisher": "Jean Grey",
+      "publisher": "Marvel Comics",
       "alignment": "good"
     },
     "work": {
@@ -18985,7 +18985,7 @@
       "aliases": ["Robin", "Red Robin", "Batman", "Nightwing", "Arkham Knight"],
       "placeOfBirth": "-",
       "firstAppearance": "Batman #635",
-      "publisher": "Robin II",
+      "publisher": "DC Comics",
       "alignment": "neutral"
     },
     "work": {
@@ -19123,7 +19123,7 @@
       ],
       "placeOfBirth": "Gotham City",
       "firstAppearance": "Batman #436 (August, 1989)",
-      "publisher": "Robin III",
+      "publisher": "DC Comics",
       "alignment": "good"
     },
     "work": {
@@ -19499,7 +19499,7 @@
       "aliases": ["Renegade", "The Target", "Freddie Dinardo"],
       "placeOfBirth": "-",
       "firstAppearance": "Detective Comics #38 (April, 1940)",
-      "publisher": "Batman II",
+      "publisher": "DC Comics",
       "alignment": "good"
     },
     "work": {
@@ -19551,7 +19551,7 @@
       ],
       "placeOfBirth": "-",
       "firstAppearance": "Detective Comics #524",
-      "publisher": "Red Hood",
+      "publisher": "DC Comics",
       "alignment": "good"
     },
     "work": {
@@ -19595,7 +19595,7 @@
       "aliases": ["Alvin Draper", "Batman", "Robin", "Timothy Wayne"],
       "placeOfBirth": "-",
       "firstAppearance": "Batman #436 (August, 1989)",
-      "publisher": "Red Robin",
+      "publisher": "DC Comics",
       "alignment": "good"
     },
     "work": {
@@ -19838,7 +19838,7 @@
       ],
       "placeOfBirth": "Waverly, Iowa",
       "firstAppearance": "-",
-      "publisher": "Goliath",
+      "publisher": "Marvel Comics",
       "alignment": "good"
     },
     "work": {
@@ -20242,7 +20242,7 @@
       "aliases": ["Spider-Clone", "Spider-Man"],
       "placeOfBirth": "Place of birth unknown",
       "firstAppearance": "Amazing Spider-Man # 149 (as Spider-Clone); Web of Spider-Man # 117 (as Ben Reilly)",
-      "publisher": "Spider-Carnage",
+      "publisher": "Marvel Comics",
       "alignment": "good"
     },
     "work": {
@@ -20424,7 +20424,7 @@
       "aliases": ["Venom", "Spider-Man"],
       "placeOfBirth": "-",
       "firstAppearance": "Amazing Spider-Man #19 (1964)",
-      "publisher": "Venom III",
+      "publisher": "Marvel Comics",
       "alignment": "bad"
     },
     "work": {
@@ -20838,7 +20838,7 @@
       "aliases": ["Thing", "Ms Marvel"],
       "placeOfBirth": "-",
       "firstAppearance": "Thing #27",
-      "publisher": "Ms Marvel II",
+      "publisher": "Marvel Comics",
       "alignment": "good"
     },
     "work": {
@@ -21653,7 +21653,7 @@
       ],
       "placeOfBirth": "-",
       "firstAppearance": "More Fun Comics #52 (February, 1940)",
-      "publisher": "Aztar",
+      "publisher": "DC Comics",
       "alignment": "good"
     },
     "work": {
@@ -22731,7 +22731,7 @@
       ],
       "placeOfBirth": "Krypton",
       "firstAppearance": "ACTION COMICS #1",
-      "publisher": "Superman Prime One-Million",
+      "publisher": "DC Comics",
       "alignment": "good"
     },
     "work": {
@@ -23183,7 +23183,7 @@
       "aliases": ["-"],
       "placeOfBirth": "-",
       "firstAppearance": "New X-Men #118 (November, 2001)",
-      "publisher": "Angel Salvadore",
+      "publisher": "Marvel Comics",
       "alignment": "good"
     },
     "work": {
@@ -23412,7 +23412,7 @@
       ],
       "placeOfBirth": "Asgard",
       "firstAppearance": "Journey into Mystery #83 (August, 1962)",
-      "publisher": "Rune King Thor",
+      "publisher": "Marvel Comics",
       "alignment": "good"
     },
     "work": {
@@ -23875,7 +23875,7 @@
       ],
       "placeOfBirth": "San Francisco, California",
       "firstAppearance": "Venom Vol 2 #17",
-      "publisher": "Anti-Venom",
+      "publisher": "Marvel Comics",
       "alignment": "good"
     },
     "work": {
@@ -24296,7 +24296,7 @@
       "aliases": ["-"],
       "placeOfBirth": "New York, New York",
       "firstAppearance": "(as alien costume) Secret Wars #8, (behind the scenes) Web of Spider-Man #18, (actual appearance) Amazing Spider-Man #300",
-      "publisher": "Anti-Venom",
+      "publisher": "Marvel Comics",
       "alignment": "bad"
     },
     "work": {
@@ -24384,7 +24384,7 @@
       "aliases": ["Scorpion"],
       "placeOfBirth": "-",
       "firstAppearance": "(As Gargan) Amazing Spider-Man #19 (1964); (as Scorpion) Amazing Spider-Man #20 (1965); (as Venom) Marvel Knights: Spider-Man #10 (2005)",
-      "publisher": "Scorpion",
+      "publisher": "Marvel Comics",
       "alignment": "bad"
     },
     "work": {
@@ -24428,7 +24428,7 @@
       "aliases": ["Deadpool"],
       "placeOfBirth": "-",
       "firstAppearance": "What If? Iron Man: Demon in an Armor #1 (February, 2011)",
-      "publisher": "Deadpool",
+      "publisher": "Marvel Comics",
       "alignment": "-"
     },
     "work": {
@@ -24516,7 +24516,7 @@
       "aliases": ["Guardian"],
       "placeOfBirth": "Calgary, Alberta, Canada",
       "firstAppearance": "X-Men #139 (November, 1980)",
-      "publisher": "Vindicator II",
+      "publisher": "Marvel Comics",
       "alignment": "good"
     },
     "work": {
@@ -24608,7 +24608,7 @@
       "aliases": ["Victor Shade"],
       "placeOfBirth": "-",
       "firstAppearance": "Avengers Vol.1 #57, Young Avengers # 4",
-      "publisher": "Anti-Vision",
+      "publisher": "Marvel Comics",
       "alignment": "good"
     },
     "work": {
@@ -24916,7 +24916,7 @@
       "aliases": ["Thunderbird"],
       "placeOfBirth": "Camp Verde, Arizona",
       "firstAppearance": "New Mutants #16 (June, 1984)",
-      "publisher": "Thunderbird II",
+      "publisher": "Marvel Comics",
       "alignment": "good"
     },
     "work": {
@@ -25565,7 +25565,7 @@
       "aliases": ["Hank Pym"],
       "placeOfBirth": "Elmsford, New York",
       "firstAppearance": "(as Pym) TALES TO ASTONISH #27, (as Ant-Man) TALES TO ASTONISH #35, (as Giant-Man) TALES TO ASTONISH #49, (as Goliath) AVENGERS #28, (as Yellowjacket) AVENGERS #59",
-      "publisher": "Ant-Man",
+      "publisher": "Marvel Comics",
       "alignment": "good"
     },
     "work": {
