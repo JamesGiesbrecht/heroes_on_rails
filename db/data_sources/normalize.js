@@ -88,6 +88,7 @@ const superman = {
   }
 }
 
+// Example csv
 const heroesCSV = {
   id: '98',
   name: 'Black Cat',
@@ -102,6 +103,7 @@ const heroesCSV = {
   Weight: '54'
 }
 
+// Example powers csv
 const zoom = [
   'Super Speed',
   'Intangibility',
@@ -141,32 +143,59 @@ const run = async () => {
   const powers = {}
   // Creates an array of strings for each heroes power
   powersConverted.forEach((hero) => powers[hero.hero_names.toLowerCase()] = Object.keys(hero).filter((power) => hero[power] === 'TRUE'))
-  const superHeroes = superheroesApiJson.map((supe) => {
-    let csvHero = {}
+
+  //  Running through JSON heroes
+  const jsonHeroes = superheroesApiJson.map((hero) => {
     // Splice will remove an item from an array and return the removed item
-    const heroIndex = heroesConverted.findIndex((hero) => hero.name === supe.name)
-    if (heroIndex !== -1) csvHero = heroesConverted.splice(heroIndex, 1)[0]
-    const superHero = {}
-    superHero.name = supe.name
-    superHero.powerStats = supe.powerstats
-    superHero.powers = powers[supe.name.toLowerCase()]
-    superHero.appearance = {}
-    superHero.biography = {}
-    superHero.appearance.gender = checkForNull(supe.appearance.gender, csvHero.Gender)
-    superHero.appearance.race = checkForNull(supe.appearance.race, csvHero.Race)
-    superHero.appearance.heightIn = checkForNull(supe.appearance.height[0], csvHero.height)
-    superHero.appearance.weightLb = checkForNull(supe.appearance.weight[0], csvHero.weight)
-    superHero.appearance.eyeColor = checkForNull(supe.appearance.eyeColor, csvHero['Eye color'])
-    superHero.appearance.hairColor = checkForNull(supe.appearance.hairColor, csvHero['Hair color'])
-    superHero.biography.fullName = checkForNull(supe.biography.fullName, null)
-    superHero.biography.aliases = checkForNull(supe.biography.aliases, null)
-    superHero.biography.placeOfBirth = checkForNull(supe.biography.placeOfBirth, null)
-    superHero.biography.publisher = checkForNull(supe.biography.publisher, csvHero.Publisher)
-    superHero.biography.alignment = checkForNull(supe.biography.alignment, csvHero.Alignment)
-    superHero.images = supe.images
-    return superHero
+    const heroIndex = heroesConverted.findIndex((hero) => hero.name === hero.name)
+    let csvHero = heroIndex !== 1 ? heroesConverted.splice(heroIndex, 1)[0] : null
+    return {
+      name: hero.name,
+      powerStats: hero.powerstats,
+      powers: powers[hero.name.toLowerCase()] || [],
+      appearance: {
+        gender: checkForNull(hero.appearance.gender, csvHero.Gender),
+        race: checkForNull(hero.appearance.race, csvHero.Race),
+        heightIn: centimetersToInches(hero.appearance.height[1]) || centimetersToInches(csvHero.Height),
+        weightLb: kgsToPounds(hero.appearance.weight[1]) || kgsToPounds(csvHero.Weight),
+        eyeColor: checkForNull(hero.appearance.eyeColor, csvHero['Eye color']),
+        hairColor: checkForNull(hero.appearance.hairColor, csvHero['Hair color']),
+      },
+      biography: {
+        fullName: checkForNull(hero.biography.fullName),
+        aliases: checkForNull(hero.biography.aliases),
+        placeOfBirth: checkForNull(hero.biography.placeOfBirth),
+        publisher: checkForNull(hero.biography.publisher, csvHero.Publisher),
+        alignment: checkForNull(hero.biography.alignment, csvHero.Alignment),
+      },
+      images: hero.images,
+    }
   })
-  fs.writeFileSync(__dirname + '/normalized/heroes.json', JSON.stringify(superHeroes), 'utf-8')
+
+  // Running through remaining CSV heroes
+  const csvHeroes = heroesConverted.map((hero) => ({
+      name: hero.name,
+      powerStats: {},
+      powers: powers[hero.name.toLowerCase()] || [],
+      appearance: {
+        gender: checkForNull(hero.Gender),
+        race: checkForNull(hero.Race),
+        heightIn: centimetersToInches(hero.Height),
+        weightLb: kgsToPounds(hero.Weight),
+        eyeColor: checkForNull(hero['Eye color']),
+        hairColor: checkForNull(hero['Hair color']),
+      },
+      biography: {
+        fullName: null,
+        aliases: [],
+        placeOfBirth: null,
+        publisher: checkForNull(hero.Publisher),
+        alignment: checkForNull(hero.Alignment),
+      },
+      images: {},
+  }))
+
+  fs.writeFileSync(__dirname + '/normalized/heroes.json', JSON.stringify(jsonHeroes.concat(csvHeroes)), 'utf-8')
 }
 
 run()
