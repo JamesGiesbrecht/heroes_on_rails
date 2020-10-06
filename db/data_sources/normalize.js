@@ -123,8 +123,8 @@ const run = async () => {
   const heroesConverted = await csv().fromFile(heroesCsvPath)
   const powersConverted = await csv().fromFile(powersCsvPath)
   const powers = {}
-  // Creates an array containing of string for each heroes power
-  powersConverted.forEach((hero) => powers[hero.hero_names] = Object.keys(hero).filter((power) => hero[power] === 'TRUE'))
+  // Creates an array of strings for each heroes power
+  powersConverted.forEach((hero) => powers[hero.hero_names.toLowerCase()] = Object.keys(hero).filter((power) => hero[power] === 'TRUE'))
 }
 
 run()
