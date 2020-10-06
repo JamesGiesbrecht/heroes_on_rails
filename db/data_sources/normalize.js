@@ -120,6 +120,21 @@ const checkForNull = (firstProperty, secondProperty) => {
   return firstProperty
 }
 
+const removeUnits = (str) => {
+  const num = str.split(' ')[0]
+  return ['0', '-99', '-', null, undefined].includes(num) ? null : num
+}
+
+const centimetersToInches = (centimeters) => {
+  centimeters = removeUnits(centimeters)
+  return centimeters ? Math.round(centimeters * 0.392701) : null
+}
+
+const kgsToPounds = (kgs) => {
+  kgs = removeUnits(kgs)
+  return kgs ? Math.round(kgs * 2.20462) : null
+}
+
 const run = async () => {
   const heroesConverted = await csv().fromFile(heroesCsvPath)
   const powersConverted = await csv().fromFile(powersCsvPath)
