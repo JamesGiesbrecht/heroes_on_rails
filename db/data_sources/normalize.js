@@ -125,6 +125,11 @@ const run = async () => {
   const powers = {}
   // Creates an array of strings for each heroes power
   powersConverted.forEach((hero) => powers[hero.hero_names.toLowerCase()] = Object.keys(hero).filter((power) => hero[power] === 'TRUE'))
+  const superHeroes = superheroesApiJson.map((supe) => {
+    let csvHero = {}
+    // Splice will remove an item from an array and return the removed item
+    const heroIndex = heroesConverted.findIndex((hero) => hero.name === supe.name)
+    if (heroIndex !== -1) csvHero = heroesConverted.splice(heroIndex, 1)[0]
 }
 
 run()
