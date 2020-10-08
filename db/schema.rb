@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_10_08_005507) do
+ActiveRecord::Schema.define(version: 2020_10_08_021355) do
 
   create_table "heros", force: :cascade do |t|
     t.string "name"
@@ -24,6 +24,11 @@ ActiveRecord::Schema.define(version: 2020_10_08_005507) do
     t.string "alignment"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "heros_powers", id: false, force: :cascade do |t|
+    t.integer "hero_id", null: false
+    t.integer "power_id", null: false
   end
 
   create_table "powers", force: :cascade do |t|
