@@ -2,5 +2,5 @@
 
 class Publisher < ApplicationRecord
   # If a publisher is destroyed, associated heroes are as well
-  has_many :heros, dependent: :destroy
+  # has_many :heros, dependent: :destroy
 end
