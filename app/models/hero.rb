@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class Hero < ApplicationRecord
   belongs_to :publisher, optional: true
   belongs_to :race, optional: true
