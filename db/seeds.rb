@@ -26,7 +26,9 @@ heroes.each do |h|
     eye_color: h['appearance']['eyeColor'],
     hair_color: h['appearance']['hairColor'],
     place_of_birth: h['biography']['placeOfBirth'],
-    alignment: h['biography']['alignment']
+    alignment: h['biography']['alignment'],
+    publisher_id: publisher.id,
+    race_id: race.id
   )
   powers = []
   h['powers'].each do |power|
@@ -39,4 +41,4 @@ pp Hero.take(2)
 pp Publisher.take(2)
 pp Race.take(2)
 pp Power.take(2)
-pp Hero.take(2)[0].powers
+pp Hero.take(2)[0].publisher
