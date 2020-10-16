@@ -12,7 +12,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20_201_008_021_355) do
+ActiveRecord::Schema.define(version: 20_201_016_012_539) do
   create_table 'heros', force: :cascade do |t|
     t.string 'name'
     t.string 'fullName'
@@ -25,6 +25,10 @@ ActiveRecord::Schema.define(version: 20_201_008_021_355) do
     t.string 'alignment'
     t.datetime 'created_at', precision: 6, null: false
     t.datetime 'updated_at', precision: 6, null: false
+    t.integer 'publisher_id'
+    t.integer 'race_id'
+    t.index ['publisher_id'], name: 'index_heros_on_publisher_id'
+    t.index ['race_id'], name: 'index_heros_on_race_id'
   end
 
   create_table 'heros_powers', id: false, force: :cascade do |t|
