@@ -27,9 +27,9 @@
       <td><%= hero.hair_color %></td>
       <td><%= hero.place_of_birth %></td>
       <td><%= hero.alignment %></td>
-      <td><%= hero.publisher_id %></td>
-      <td><%= hero.race_id %></td>
-      <td><%= hero.powers %></td>
+      <td><%= hero.publisher.name %></td>
+      <td><%= hero.race.race %></td>
+      <td><%= hero.powers.map(&:name).join(', ') %></td>
     </tr>
   <% end %>
 </table>

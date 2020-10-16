@@ -2,6 +2,6 @@
 
 class HeroesController < ApplicationController
   def index
-    @heroes = Hero.all
+    @heroes = Hero.includes(:powers).includes(:publisher).includes(:race).all
   end
 end
