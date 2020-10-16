@@ -1,0 +1,2 @@
+superhero-api.json - https://akabab.github.io/superhero-api/api/
+heroes_information.csv, super_hero_powers.csv - https://www.kaggle.com/claudiodavi/superhero-set/home
