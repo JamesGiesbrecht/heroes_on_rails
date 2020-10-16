@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
 class Race < ApplicationRecord
-  has_many :heros
+  validates :race, presence: true, uniqueness: true
+  has_many :heros, dependent: :nullify
 end

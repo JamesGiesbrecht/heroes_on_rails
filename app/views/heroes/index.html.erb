@@ -27,8 +27,8 @@
       <td><%= hero.hair_color %></td>
       <td><%= hero.place_of_birth %></td>
       <td><%= hero.alignment %></td>
-      <td><%= hero.publisher.name %></td>
-      <td><%= hero.race.race %></td>
+      <td><%= hero.publisher.name unless hero.publisher.blank? %></td>
+      <td><%= hero.race.race unless hero.race.blank? %></td>
       <td><%= hero.powers.map(&:name).join(', ') %></td>
     </tr>
   <% end %>
