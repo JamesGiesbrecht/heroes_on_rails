@@ -1,0 +1,35 @@
+<h1>Heroes List</h1>
+
+<table>
+  <tr>
+    <th>name</th>
+    <th>fullName</th>
+    <th>gender</th>
+    <th>height</th>
+    <th>weight</th>
+    <th>eye_color</th>
+    <th>hair_color</th>
+    <th>place_of_birth</th>
+    <th>alignment</th>
+    <th>publisher_id</th>
+    <th>race_id</th>
+    <th>powers</th>
+  </tr>
+
+  <% @heroes.each do |hero| %>
+    <tr>
+      <td><%= hero.name %></td>
+      <td><%= hero.fullName %></td>
+      <td><%= hero.gender %></td>
+      <td><%= hero.height %></td>
+      <td><%= hero.weight %></td>
+      <td><%= hero.eye_color %></td>
+      <td><%= hero.hair_color %></td>
+      <td><%= hero.place_of_birth %></td>
+      <td><%= hero.alignment %></td>
+      <td><%= hero.publisher_id %></td>
+      <td><%= hero.race_id %></td>
+      <td><%= hero.powers %></td>
+    </tr>
+  <% end %>
+</table>
