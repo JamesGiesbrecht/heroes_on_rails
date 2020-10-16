@@ -28,12 +28,15 @@ heroes.each do |h|
     place_of_birth: h['biography']['placeOfBirth'],
     alignment: h['biography']['alignment']
   )
+  powers = []
   h['powers'].each do |power|
-    power = Power.find_or_create_by(name: power)
+    powers.append(Power.find_or_create_by(name: power))
   end
+  hero.powers = powers
   hero.save
 end
 pp Hero.take(2)
 pp Publisher.take(2)
 pp Race.take(2)
 pp Power.take(2)
+pp Hero.take(2)[0].powers
