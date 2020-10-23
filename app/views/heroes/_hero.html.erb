@@ -1,0 +1,41 @@
+<div class="card">
+  <div class="card-content">
+    <div>
+        <p class="title is-4"><%= hero.name %></p>
+        <p class="subtitle is-6"><%= hero.fullName %></p>
+    </div>
+    <div class="content">
+      <div class="list">
+        <% if hero.gender.present? %>
+          <div class="list-item has-text-centered"><p class="has-text-weight-bold key">Gender</p><p class="value"><%= hero.gender %></p></div>
+        <% end %>
+        <% if hero.height.present? %>
+          <div class="list-item has-text-centered"><p class="has-text-weight-bold key">Height</p><p class="value"><%= hero.height %></p></div>
+        <% end %>
+        <% if hero.weight.present? %>
+          <div class="list-item has-text-centered"><p class="has-text-weight-bold key">Weight</p><p class="value"><%= hero.weight %></p></div>
+        <% end %>
+        <% if hero.eye_color.present? %>
+          <div class="list-item has-text-centered"><p class="has-text-weight-bold key">Eye Colour</p><p class="value"><%= hero.eye_color %></p></div>
+        <% end %>
+        <% if hero.hair_color.present? %>
+          <div class="list-item has-text-centered"><p class="has-text-weight-bold key">Hair Colou</p><p class="value"><%= hero.hair_color %></p></div>
+        <% end %>
+        <% if hero.place_of_birth.present? %>
+          <div class="list-item has-text-centered"><p class="has-text-weight-bold key">Birthplace</p><p class="value"><%= hero.place_of_birth %></p></div>
+        <% end %>
+        <% if hero.alignment.present? %>
+          <div class="list-item has-text-centered"><p class="has-text-weight-bold key">Alignment</p><p class="value"><%= hero.alignment %></p></div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+  <footer class="card-footer">
+    <% if hero.publisher.name.present? %>
+      <p class="card-footer-item">Publisher:&nbsp<%= link_to hero.publisher.name, hero_path(hero.id) %></p>
+    <% end %>
+    <% if hero.race.race.present? %>
+      <p class="card-footer-item">Race:&nbsp<%= link_to hero.race.race, hero_path(hero.id) %></span>
+    <% end %>
+  </footer>
+</div>
