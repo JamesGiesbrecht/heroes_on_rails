@@ -1,2 +1,17 @@
 @import 'bulma/bulma';
 @import '_layout';
+
+.content {
+  margin-top: 1.5rem;
+
+}
+
+.list  {
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between;
+}
+
+.key {
+  margin-bottom: .2em!important;
+}

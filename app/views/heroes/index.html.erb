@@ -18,7 +18,7 @@
 
   <% @heroes.each do |hero| %>
     <tr>
-      <td><%= hero.name %></td>
+      <td><%= link_to hero.name, hero_path(hero.id) %></td>
       <td><%= hero.fullName %></td>
       <td><%= hero.gender %></td>
       <td><%= hero.height %></td>
