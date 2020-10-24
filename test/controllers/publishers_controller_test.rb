@@ -1,13 +1,13 @@
 require 'test_helper'
 
-class PublisherControllerTest < ActionDispatch::IntegrationTest
+class PublishersControllerTest < ActionDispatch::IntegrationTest
   test "should get index" do
-    get publisher_index_url
+    get publishers_index_url
     assert_response :success
   end
 
   test "should get show" do
-    get publisher_show_url
+    get publishers_show_url
     assert_response :success
   end
 
