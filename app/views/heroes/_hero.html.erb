@@ -1,8 +1,13 @@
+<div class="column">
 <div class="card">
   <div class="card-content">
     <div>
+      <% if single %>
         <p class="title is-4"><%= hero.name %></p>
-        <p class="subtitle is-6"><%= hero.fullName %></p>
+      <% else %>
+        <p class="title is-4"><%= link_to hero.name, hero_path(hero.id) %></p>
+      <% end %>
+      <p class="subtitle is-6"><%= hero.fullName %></p>
     </div>
     <div class="content">
       <div class="list">
@@ -19,7 +24,7 @@
           <div class="list-item has-text-centered"><p class="has-text-weight-bold key">Eye Colour</p><p class="value"><%= hero.eye_color %></p></div>
         <% end %>
         <% if hero.hair_color.present? %>
-          <div class="list-item has-text-centered"><p class="has-text-weight-bold key">Hair Colou</p><p class="value"><%= hero.hair_color %></p></div>
+          <div class="list-item has-text-centered"><p class="has-text-weight-bold key">Hair Colour</p><p class="value"><%= hero.hair_color %></p></div>
         <% end %>
         <% if hero.place_of_birth.present? %>
           <div class="list-item has-text-centered"><p class="has-text-weight-bold key">Birthplace</p><p class="value"><%= hero.place_of_birth %></p></div>
@@ -31,11 +36,12 @@
     </div>
   </div>
   <footer class="card-footer">
-    <% if hero.publisher.name.present? %>
+    <% if hero.publisher.present? %>
       <p class="card-footer-item">Publisher:&nbsp<%= link_to hero.publisher.name, hero_path(hero.id) %></p>
     <% end %>
-    <% if hero.race.race.present? %>
+    <% if hero.race.present? %>
       <p class="card-footer-item">Race:&nbsp<%= link_to hero.race.race, hero_path(hero.id) %></span>
     <% end %>
   </footer>
+</div>
 </div>

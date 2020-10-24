@@ -13,4 +13,8 @@
   <td><%= @hero.powers.map(&:name).join(', ') %></td>
 </tr>
 
-  <%= render partial: 'heroes/hero', object: @hero %>
+  <%=
+    render partial: 'heroes/hero',
+    object: @hero,
+    locals: { single: true }
+  %>
