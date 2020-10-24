@@ -3,9 +3,9 @@
   <div class="card-content">
     <div>
       <% if single %>
-        <p class="title is-4"><%= hero.name %></p>
+        <h4 class="title is-4"><%= hero.name %></h4>
       <% else %>
-        <p class="title is-4"><%= link_to hero.name, hero_path(hero.id) %></p>
+        <h4 class="title is-4"><%= link_to hero.name, hero_path(hero.id) %></h4>
       <% end %>
       <p class="subtitle is-6"><%= hero.fullName %></p>
     </div>
@@ -33,6 +33,14 @@
           <div class="list-item has-text-centered"><p class="has-text-weight-bold key">Alignment</p><p class="value"><%= hero.alignment %></p></div>
         <% end %>
       </div>
+      <% if single %>
+        <h5 class="title is-5 powers-title">Powers</h5>
+        <ul>
+          <% hero.powers.each do |power| %>
+            <li><%= power.name %></li>
+          <% end %>
+        </ul>
+      <% end %>
     </div>
   </div>
   <footer class="card-footer">
