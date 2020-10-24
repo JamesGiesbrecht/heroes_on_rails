@@ -37,10 +37,10 @@
   </div>
   <footer class="card-footer">
     <% if hero.publisher.present? %>
-      <p class="card-footer-item">Publisher:&nbsp<%= link_to hero.publisher.name, hero_path(hero.id) %></p>
+      <p class="card-footer-item">Publisher:&nbsp<%= link_to hero.publisher.name, publisher_path(hero.publisher.id) %></p>
     <% end %>
     <% if hero.race.present? %>
-      <p class="card-footer-item">Race:&nbsp<%= link_to hero.race.race, hero_path(hero.id) %></span>
+      <p class="card-footer-item">Race:&nbsp<%= link_to hero.race.race, race_path(hero.race.id) %></span>
     <% end %>
   </footer>
 </div>

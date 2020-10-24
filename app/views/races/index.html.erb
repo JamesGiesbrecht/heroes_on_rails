@@ -2,6 +2,6 @@
 
 <ul>
   <% @races.each do |race| %>
-    <li><%= race.race %></li>
+    <li><%= link_to race.race, race_path(race.id) %></li>
   <% end %>
 </ul>

@@ -2,6 +2,6 @@
 
 <ul>
   <% @publishers.each do |publisher| %>
-    <li><%= publisher.name %></li>
+    <li><%= link_to publisher.name, publisher_path(publisher.id) %></li>
   <% end %>
 </ul>
