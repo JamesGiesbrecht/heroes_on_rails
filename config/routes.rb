@@ -6,4 +6,6 @@ Rails.application.routes.draw do
   resources :publishers, only: %i[show index]
   resources :races, only: %i[show index]
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+
+  get "search", to: "heroes#search", as: "search" # search_path
 end

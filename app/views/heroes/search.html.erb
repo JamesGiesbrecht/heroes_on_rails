@@ -1,0 +1,11 @@
+<h1 class="title is-2">Search results for "<%= params[:search_term] %>"</h1>
+<p>
+  Found <%= pluralize(@heroes.size, 'result') %> for the search "<%= params[:search_term] %>"
+</p>
+<div class="columns is-multiline search-results">
+  <%=
+    render partial: 'heroes/hero',
+    collection: @heroes,
+    locals: { single: false }
+  %>
+</div>
