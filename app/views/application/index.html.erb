@@ -1,0 +1,25 @@
+<div class="content">
+<h2>Sources</h2>
+<p>This project contains a database of roughly 734 superheroes and villains. The data in this project is pulled in from 3 sources.</p>
+<ul>
+<li>An <a href="https://akabab.github.io/superhero-api/api/">open source superhero REST API</a> providing a JSON file with in depth hero information.</li>
+<li>A CSV with more basic hero information scraped from <a href="https://superherodb.com">Superhero DB</a></li>
+<li>A CSV containing list of powers for each hero, from the <a href="https://www.kaggle.com/claudiodavi/superhero-set/home">same source as the previous file</a></li>
+</ul>
+<p>The JSON data is more complete so the DB will be based off this and if the data is missing any properties the CSV will be searched. Any heroes that are in the CSV but not the JSON will then also be added to the DB, with as many fields as are available.</p>
+
+<p>The powers CSV will also be parsed and an array of each heroes powers will be added to each entry.</p>
+
+<p>The database will consist of 4 tables</p>
+<ul>
+<li>Heroes</li>
+<li>Powers</li>
+<li>Races</li>
+<li>Publishers</li>
+</ul>
+
+<p>Every hero can have many powers, one race and one publisher
+<p>Powers can belong to many heroes</p>
+<p>Races can identify many heroes</p>
+<p>Publishers can own many heroes</p>
+</div>

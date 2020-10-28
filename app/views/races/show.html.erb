@@ -1,0 +1,9 @@
+<h1 class="title is-2"><%= @race.race %></h1>
+
+<div class="columns is-multiline">
+  <%=
+    render partial: 'heroes/hero',
+    collection: @race.heros,
+    locals: { single: false }
+  %>
+</div>

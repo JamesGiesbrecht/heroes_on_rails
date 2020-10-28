@@ -7,9 +7,42 @@
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
   </head>
 
   <body>
-    <%= yield %>
+    <header class="header">
+      <div class="container">
+        <nav class="level">
+          <div class="level-left">
+            <div class="level-item title is-1">
+              Heroes On Rails
+            </div>
+          </div>
+          <div class="level-item">
+            <%= render partial: 'heroes/search_form'%>
+          </div>
+          <div class="level-right">
+            <p class="level-item">
+              <%= link_to("Heroes", heroes_path, :class => "button is-dark is-outlined nav-button") %>
+              <%= link_to("Publishers", publishers_path, :class => "button is-dark is-outlined nav-button") %>
+              <%= link_to("Races", races_path, :class => "button is-dark is-outlined nav-button") %>
+              <%= link_to("About", '/', :class => "button is-dark is-outlined nav-button") %>
+            </p>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <section class="section">
+      <div class="container">
+        <%= yield %>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        Copyright © 2020 Heroes On Rails. All rights reserved.
+      </div>
+    </footer>
   </body>
 </html>

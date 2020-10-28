@@ -1,0 +1,32 @@
+@import 'bulma/bulma';
+@import '_layout';
+
+.content {
+  margin-top: 1.5rem;
+}
+
+.nav-button {
+  margin: .5em;
+}
+
+.list  {
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between;
+}
+
+.powers-title {
+  margin-top: 2em;
+}
+
+.list-item {
+  margin: 0.75em;
+}
+
+.key {
+  margin-bottom: .2em!important;
+}
+
+li {
+  list-style: none;
+}

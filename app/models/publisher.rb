@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
 class Publisher < ApplicationRecord
-  # If a publisher is destroyed, associated heroes are as well
-  # has_many :heros, dependent: :destroy
+  validates :name, presence: true, uniqueness: true
+  has_many :heros, dependent: :nullify
 end

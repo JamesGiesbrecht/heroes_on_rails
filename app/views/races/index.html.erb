@@ -1,0 +1,7 @@
+<h1 class="title is-2">Races List</h1>
+
+<ul>
+  <% @races.each do |race| %>
+    <li><%= link_to race.race, race_path(race.id) %></li>
+  <% end %>
+</ul>
